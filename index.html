@@ -60,27 +60,27 @@
 </head>
 <body>
   <div id="container">
-    <h2>Entrez le mot de passe</h2>
+    <h2>You know what to do...</h2>
     <input type="password" id="password" placeholder="Mot de passe">
     <br>
     <button onclick="checkPassword()">Valider</button>
 
     <div id="secret">
-      <h3>🎉 Accès autorisé !</h3>
-      <img src="chemin/vers/ton-image.jpg" alt="Contenu protégé">
+      <h3>Bravo !</h3>
+      <img src="map.png" alt="Contenu protégé">
     </div>
   </div>
 
   <script>
     function checkPassword() {
-      const correctPassword = "monsecret"; // <-- modifie ici le mot de passe
+      const correctPassword = "_Ch4p0uX_"; // <-- modifie ici le mot de passe
       const userPassword = document.getElementById("password").value;
       const secret = document.getElementById("secret");
 
       if (userPassword === correctPassword) {
         secret.style.display = "block";
       } else {
-        alert("Mot de passe incorrect !");
+        alert("Mais non enfin :((");
       }
     }
   </script>
